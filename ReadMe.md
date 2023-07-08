@@ -1,5 +1,5 @@
 
-![Logo](assets\img\logo\SINCE_2023-removebg-preview-removebg-preview.png)
+![Logo](assets/img/logo/SINCE_2023-removebg-preview-removebg-preview.png)
 
 
 # TSS Login System
@@ -54,16 +54,16 @@ This is a login system, the community, TSS gave me from 01-07-2023 t0 08-o7-2023
 
 ## Screenshots
 
-![Home Page](assets\img\preview\home_page.png)
+![Home Page](assets/img/preview/home_page.png)
 Home Page
 
-![Login Page](assets\img\preview\login_page.png)
+![Login Page](assets/img/preview/login_page.png)
 Login Page
 
-![Signup Page](assets\img\preview\signup_page.png)
+![Signup Page](assets/img/preview/signup_page.png)
 Signup Page
 
-![Dashboard Page](assets\img\preview\dashboard_page.png)
+![Dashboard Page](assets/img/preview/dashboard_page.png)
 Dashboard Page
 
 # TSS Login System
@@ -76,4 +76,4 @@ This is a login system, the community, TSS gave me from 01-07-2023 t0 08-07-2023
 - [@nforshifu234dev](https://www.github.com/nforshifu234dev/)
 
 
-![Logo](assets\img\logo\SINCE_2023-removebg-preview-removebg-preview.png)
+![Logo](assets/img/logo/SINCE_2023-removebg-preview-removebg-preview.png)
