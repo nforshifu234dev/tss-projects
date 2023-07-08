@@ -1,0 +1,463 @@
+.container
+{
+    /* border:  red solid 2px; */
+    display: flex;
+}
+
+.container .side-menu,
+.container .main
+{
+    height: 100%;
+    display: block;
+}
+
+.container .side-menu
+{
+    width: clamp(100px, 100vh, 300px);
+    /* margin-right: 3%; */
+    /* border: red solid 2px; */
+    background: #e7e5e5;
+}
+
+@media screen and (max-width: 550px) 
+{
+
+    .container .side-menu
+    {
+        width: 100px !important;
+    }
+
+    .container .side-menu
+    {
+        width: 100px !important;
+    }
+
+    .container .side-menu .top-menu .logo
+    {
+        /* display: block !important; */
+        /* border: red solid 2px; */
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .container .side-menu .top-menu .message
+    {
+        display: none !important;
+    }
+
+
+    .container .side-menu .link
+    {
+        display: block;
+        width: 100%;
+        /* border: rgb(39, 180, 17) solid 2px; */
+    }
+
+    .container .side-menu .link .icon
+    {
+        width: 100% !important;
+        /* border: red solid 2px; */
+    }
+
+    .container .side-menu .link .message,
+    .container .main .top-menu .sidenav-toggle
+    {
+        display: none;
+    }
+    
+}
+
+.container .side-menu .top-menu
+{
+    /* border: red solid 2px; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.container .side-menu .top-menu .logo
+{
+    width: 40%;
+    margin-right: 10px;
+    /* border: green solid 2px; */
+}
+
+.container .side-menu .top-menu .message
+{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.container .side-menu  .links
+{
+    height: calc(100% - 20%);
+    /* border: red solid 2px; */
+    overflow-y: auto;
+    padding: 0.3rem;
+}
+
+
+.container .side-menu  .links .link
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    align-items: center;
+    /* background: #515151; */
+    /* border-radius: 4px; */
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--text-dark);
+    position: relative;
+}
+
+.container .side-menu  .links .link:hover
+{
+    text-decoration: none;
+}
+
+.container .side-menu  .links .link .icon
+{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .side-menu  .links .link .message
+{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.container .side-menu  .links .link .dropdown-btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: var(--text-dark); */
+    /* color: var(--text-white); */
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* SIDEBAR MINIMIZED */
+
+.min-side-menu
+{
+    width: 100px !important;
+}
+
+.min-side-menu .top-menu .logo
+{
+    /* display: block !important; */
+    /* border: red solid 2px; */
+    width: 100% !important;
+    height: 100%;
+}
+
+.min-side-menu .top-menu .message
+{
+    display: none !important;
+}
+
+
+.min-side-menu .link
+{
+    display: block;
+    width: 100%;
+    /* border: rgb(39, 180, 17) solid 2px; */
+}
+
+.min-side-menu .link .icon
+{
+    width: 100% !important;
+    /* border: red solid 2px; */
+}
+
+.min-side-menu .link .message
+{
+    display: none;
+}
+
+.container .main
+{
+    width: 100%;
+    padding: 0;
+    /* border: green solid 2px; */
+}
+
+
+.container .main .top-menu
+{
+    height: 12.5vh;
+    width: 100%;
+    background: #e7e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 550px) 
+{
+
+    .container .main .top-menu
+    {
+        justify-content: right;
+    }
+    
+}
+
+.container .main .top-menu .links 
+{
+    display: flex;
+    align-items: center;
+}
+
+.container .main .top-menu .links .link
+{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    color: var(--text-dark);
+}
+
+.container .main .top-menu .links .link .icon
+{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.container .main .top-menu .links .link .message
+{
+    text-transform: capitalize;
+    font-size: calc(100% - 0.4rem);
+    height: 100%;
+}
+
+
+.container .main .top-menu .links .link .nav-profile-pic
+{
+    height: 40px;
+    width: 40px;
+    /* width: 50px; */
+    overflow: hidden;
+    display: block;
+}
+
+.container .main .top-menu .links .link:last-of-type
+{
+    background: var(--text-dark);
+    color: var(--text-white);
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+.container .main .top-menu .links .link:last-of-type:hover
+{
+    text-decoration: none;
+}
+
+.container .main .top-menu .links .link:last-of-type .message
+{
+    text-transform: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+.container .main .contents
+{
+    width: 100%;
+    height: calc(100% - 12.5vh);
+    /* overflow: auto; */
+    /* border: red solid 2px; */
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; */
+
+}
+
+
+.container .main .contents section,
+.container .main .contents .section
+{
+    height: 200px;
+    width: 23%;
+    margin: 0 1%;
+    margin-bottom: 1%;
+    border: var(--text-dark) solid 1px;
+    overflow: hidden;
+    position: relative;
+    /* display: block; */
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    text-align: center;
+    background: url("../img/collection_of_ink_splatters.jpg"), var(--text-dark);
+    background-size: cover;
+    border-radius: 5px;
+    color: rgb(239, 178, 55);
+    /* color: black; */
+    font-size: calc(100% + 0.5rem);
+    font-weight: 800;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .main .contents section .icon,
+.container .main .contents .section .icon
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(100% - 0.2rem);
+    /* border: red solid 2px; */
+    background: var(--text-dark);
+    color: var(--text-white);
+    border-radius: 50%;
+}
+
+.container .main .contents section .message,
+.container .main .contents .section .message
+{
+    background: rgb(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1000px) 
+{
+
+    .container .main .contents section,
+    .container .main .contents .section
+    {
+        width: 100%;
+    }
+    
+}
+
+.container .main .contents section:hover,
+.container .main .contents .section:hover
+{
+    box-shadow: -3px 3px 5px var(--text-dark);
+    transform: scale(1.01);
+    text-decoration: none;
+}
+
+.container .main  .welcome-admin-banner
+{
+    background: url("../img/26684.jpg"), var(--text-dark) !important;
+    background-size: cover !important;
+    border-radius: 5px;
+    height: 250px !important;
+    box-shadow: -3px 3px 5px var(--text-dark);
+    display: block !important;
+    text-align: left;
+}
+
+.container .main  .welcome-admin-banner:hover
+{
+    transform: scale(1) !important;
+}
+
+.container .main  .welcome-admin-banner .greetings-banner
+{
+    width: 100%;
+    height: 100%;
+    /* border: green solid 2px; */
+    text-align: left;
+}
+
+.container .main  .welcome-admin-banner .greetings-banner div
+{
+    margin-bottom: 10px;
+}
+
+.container .main  .welcome-admin-banner .greetings-banner .info .important
+{
+    padding: 0.3rem;
+    border-radius: 10px 20px;
+    text-align: center;
+}
+
+.container .main  .welcome-admin-banner .role-banner
+{
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    color: var(--text-dark);
+    font-size: calc(100% - 0.6rem);
+}
+
+@media screen and (max-width: 550px) 
+{
+
+    .container .main  .welcome-admin-banner
+    {
+        height: max-content !important;
+        font-size: calc(100% + 0.2rem) !important;
+    }
+
+    .container .main  .welcome-admin-banner .greetings-message
+    {
+        color: var(--text-white);
+    }
+
+    .container .main  .welcome-admin-banner .info
+    {
+        color: var(--text-dark);
+    }
+
+    .container .main  .welcome-admin-banner .role-banner
+    {
+        position: relative;
+        color: var(--text-white);
+    }
+
+    .container .main .top-menu .links .link
+    {
+        display: none;
+    }
+
+    .container .main .top-menu .links .link:last-of-type
+    {
+        display: block;
+        width: 100%;
+        background: transparent;
+        color: var(--text-dark);
+        border: 1px solid var(--text-dark);
+        width: 150px;
+        display: flex;
+    }
+
+}

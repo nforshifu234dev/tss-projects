@@ -1,0 +1,47 @@
+[
+    {
+      "role": "Software Developer",
+      "shortCode": "DEV"
+    },
+    {
+      "role": "Web Developer",
+      "shortCode": "WEB"
+    },
+    {
+      "role": "Mobile Developer",
+      "shortCode": "MOB"
+    },
+    {
+      "role": "Data Scientist",
+      "shortCode": "DS"
+    },
+    {
+      "role": "Data Analyst",
+      "shortCode": "DA"
+    },
+    {
+      "role": "Product Designer",
+      "shortCode": "PD"
+    },
+    {
+        "role": "Project Manager",
+        "shortCode": "PM"
+    },
+    {
+      "role": "UI/UX Designer",
+      "shortCode": "UIUX"
+    },
+    {
+      "role": "Cloud Engineer",
+      "shortCode": "CLOUD"
+    },
+    {
+      "role": "Artificial Intelligence Engineer",
+      "shortCode": "AI"
+    },
+    {
+        "role": "Tester",
+        "shortCode": "TEST"
+    }
+  ]
+  

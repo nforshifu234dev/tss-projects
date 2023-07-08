@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST LOGIN</title>
+
+    <style>
+#step-form div {
+  display: none;
+}
+
+#step-form div:first-child {
+  display: block;
+}
+
+    </style>
+
+</head>
+<body>
+
+  
+    
+    <form id="step-form">
+        <div id="step1">
+          <h2>Step 1</h2>
+          <input type="text" placeholder="Name" required>
+          <button id="next-btn">Next</button>
+        </div>
+        <div id="step2">
+          <h2>Step 2</h2>
+          <input type="email" placeholder="Email" required>
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+        <div id="step3">
+          <h2>Step 3</h2>
+          <textarea placeholder="Message"></textarea>
+          <button id="prev-btn">Previous</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
+
+    <script>
+
+const form = document.getElementById('step-form');
+const nextBtns = document.querySelectorAll('#step-form #next-btn');
+const prevBtns = document.querySelectorAll('#step-form #prev-btn');
+
+nextBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const currentStep = e.target.parentElement;
+    const nextStep = currentStep.nextElementSibling;
+
+    currentStep.style.display = 'none';
+    nextStep.style.display = 'block';
+  });
+});
+
+prevBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const currentStep = e.target.parentElement;
+    const prevStep = currentStep.previousElementSibling;
+
+    currentStep.style.display = 'none';
+    prevStep.style.display = 'block';
+  });
+});
+
+
+    </script>
+
+</body>
+</html>
